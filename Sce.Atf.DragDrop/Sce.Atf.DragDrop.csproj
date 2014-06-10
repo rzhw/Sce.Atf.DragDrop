@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A86ED40-E87A-45BB-9E8C-09424089ECE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sce.Atf.DragDrop</RootNamespace>
+    <AssemblyName>Sce.Atf.DragDrop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Sce.Atf.DragDrop.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\ComDataObjectExtensions.cs">
+      <Link>ComDataObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DragDataHelper.cs">
+      <Link>DragDataHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DragDropDataObject.cs">
+      <Link>DragDropDataObject.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DragDropExtender.cs">
+      <Link>DragDropExtender.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DragDropHelper.cs">
+      <Link>DragDropHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DropDescription.cs">
+      <Link>DropDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DropDescriptionHelper.cs">
+      <Link>DropDescriptionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\DropImageType.cs">
+      <Link>DropImageType.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\IDragSourceHelper2.cs">
+      <Link>IDragSourceHelper2.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\IDropTargetHelper.cs">
+      <Link>IDropTargetHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\IStream.cs">
+      <Link>IStream.cs</Link>
+    </Compile>
+    <Compile Include="..\ATF\Framework\Atf.Gui.WinForms\DragDrop\OleConverter.cs">
+      <Link>OleConverter.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
